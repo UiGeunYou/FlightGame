@@ -16,9 +16,7 @@ public class BossExplosion : MonoBehaviour
 
     private void OnDestroy()
     {
-        playerController.Score += 1000;
-        PlayerPrefs.SetInt("Score", playerController.Score);
-
+        GameManager.instance.Score += 1000;
         SceneManager.LoadScene(sceneName);
     }
 }

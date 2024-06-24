@@ -11,7 +11,7 @@ public class PositionScroller : MonoBehaviour
 
     void Update()
     {
-        //배경이 moveSirection 방향으로 moveSpeed의 속도로 이동 
+        //배경이 moveDirection 방향으로 moveSpeed의 속도로 이동 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
 
         //배경이 설정된 범위를 벗어나면 위치 재설정 

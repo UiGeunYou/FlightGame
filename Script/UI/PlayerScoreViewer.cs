@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerScoreViewer : MonoBehaviour
 {
-    [SerializeField] private PlayerController PlayerController;
     private TextMeshProUGUI textScore;
 
     private void Awake()
@@ -15,6 +14,6 @@ public class PlayerScoreViewer : MonoBehaviour
 
     private void Update()
     {
-        textScore.text = "Score : " + PlayerController.Score;
+        textScore.text = "Score : " + GameManager.instance.Score;
     }
 }

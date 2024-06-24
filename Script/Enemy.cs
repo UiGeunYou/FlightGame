@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
     public void OnDie()
     {
-        playerController.Score += scorePoint;
+        GameManager.instance.Score += scorePoint;
         Instantiate(explosionPrefab, transform.position,Quaternion.identity);
         SpawnItem();
         Destroy(gameObject);

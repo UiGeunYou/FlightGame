@@ -28,11 +28,11 @@ public class Twinkle : MonoBehaviour
     {
         float currentTime = 0.0f;
         float percent = 0.0f;
-        while(percent < 1)
+        while (percent < 1)
         {
             //fadeTime 시간동안 while문 반복 실행 
             currentTime += Time.deltaTime;
-            percent = currentTime/fadeTime;
+            percent = currentTime / fadeTime;
 
             //유니티의 클래스에 설정되어 있는 spriteRenderer.color, transform.position은 프로퍼티로
             //spriteRenderer.color.a = 1.0f와 같이 설정이 불가능하다.
@@ -43,7 +43,5 @@ public class Twinkle : MonoBehaviour
 
             yield return null;
         }
-        
-
     }
 }
